@@ -1,16 +1,5 @@
 <?php
 
-/**
- * Modelo Cliente
- * 
- * Representa a los clientes de la empresa Nosecaen S.L.
- * Gestiona el acceso a la tabla 'clientes' y sus relaciones con cuotas y tareas.
- * 
- * @author Tu Nombre
- * @version 1.0
- * @since 2026-01-24
- * @category Models
- */
 
 namespace App\Models;
 

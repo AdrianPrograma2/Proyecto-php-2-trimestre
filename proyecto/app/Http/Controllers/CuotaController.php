@@ -1,20 +1,6 @@
 <?php
 
-/**
- * Controlador CuotaController
- * 
- * Gestiona las operaciones CRUD para las cuotas (facturas) de la empresa.
- * Funcionalidades obligatorias según PDF:
- * - 1.5: Gestión CRUD (Añadir excepcional, corregir, borrar, ver lista).
- * - 1.6: Añadir remesa mensual a todos los clientes.
- * - 1.8: Enviar factura por correo (automático y manual).
- * - 1.9: Crear factura en formato PDF.
- * 
- * @author Tu Nombre
- * @version 1.0
- * @since 2026-01-24
- * @category Controllers
- */
+
 
 namespace App\Http\Controllers;
 
@@ -31,7 +17,7 @@ use Carbon\Carbon;
 class CuotaController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Funcion cliente
      */
     public function index()
     {
@@ -43,7 +29,7 @@ class CuotaController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Crear nueva cuota
      */
     public function create()
     {
@@ -52,8 +38,7 @@ class CuotaController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     * CORREGIDO: Carga la relación cliente antes de enviar email
+     * guardar cliente en base
      */
     public function store(Request $request)
     {
@@ -90,7 +75,7 @@ class CuotaController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * buscar cuota
      */
     public function show($id)
     {
@@ -99,7 +84,7 @@ class CuotaController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * editar
      */
     public function edit($id)
     {
@@ -109,7 +94,7 @@ class CuotaController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * actualizar
      */
     public function update(Request $request, $id)
     {
@@ -132,7 +117,7 @@ class CuotaController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * eliminar
      */
     public function destroy($id)
     {

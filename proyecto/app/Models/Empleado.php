@@ -1,16 +1,6 @@
 <?php
 
-/**
- * Modelo Empleado
- * 
- * Representa a los empleados de la empresa Nosecaen S.L.
- * Gestiona el acceso a la tabla 'empleados' y sus relaciones.
- * 
- * @author Tu Nombre
- * @version 1.0
- * @since 2026-01-24
- * @category Models
- */
+
 
 namespace App\Models;
 

@@ -1,16 +1,5 @@
 <?php
 
-/**
- * Mailable FacturaCuotaMail
- * 
- * Envía la factura en PDF al cliente cuando se crea una cuota.
- * Punto 1.8 del PDF - Enviar factura por correo automáticamente.
- * 
- * @author Tu Nombre
- * @version 1.0
- * @since 2026-01-24
- * @category Mail
- */
 
 namespace App\Mail;
 
@@ -30,7 +19,7 @@ class FacturaCuotaMail extends Mailable
     public $pdf;
 
     /**
-     * Create a new message instance.
+     * Mensaje
      */
     public function __construct(Cuota $cuota)
     {
@@ -48,9 +37,6 @@ class FacturaCuotaMail extends Mailable
         }
     }
 
-    /**
-     * Get the message envelope.
-     */
     public function envelope(): Envelope
     {
         return new Envelope(
@@ -59,7 +45,7 @@ class FacturaCuotaMail extends Mailable
     }
 
     /**
-     * Get the message content definition.
+     * mandar email
      */
     public function content(): Content
     {
@@ -71,9 +57,7 @@ class FacturaCuotaMail extends Mailable
         );
     }
 
-    /**
-     * Get the attachments for the message.
-     */
+ 
     public function attachments(): array
     {
         // Solo adjuntar si el PDF fue generado

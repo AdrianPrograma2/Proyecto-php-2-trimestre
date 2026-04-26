@@ -1,15 +1,6 @@
 <?php
 
-/**
- * Middleware AdminMiddleware
- * 
- * Verifica que el usuario autenticado sea de tipo administrador.
- * 
- * @author Tu Nombre
- * @version 1.0
- * @since 2026-01-24
- * @category Middleware
- */
+
 
 namespace App\Http\Middleware;
 
@@ -21,9 +12,9 @@ use Symfony\Component\HttpFoundation\Response;
 class AdminMiddleware
 {
     /**
-     * Handle an incoming request.
+     * 
      *
-     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     * @param  \Closure(\Illuminate\Http\Request):
      */
     public function handle(Request $request, Closure $next): Response
     {

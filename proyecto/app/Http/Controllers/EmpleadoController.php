@@ -1,17 +1,6 @@
 <?php
 
-/**
- * Controlador EmpleadoController
- * 
- * Gestiona las operaciones CRUD para empleados y la autenticación.
- * Según el PDF: Los administradores podrán gestionar empleados: añadir, dar de baja, 
- * cambiar el tipo y los otros datos. Cada empleado podrá modificar sus datos de contacto.
- * 
- * @author Tu Nombre
- * @version 1.0
- * @since 2026-01-24
- * @category Controllers
- */
+
 
 namespace App\Http\Controllers;
 
@@ -77,7 +66,7 @@ class EmpleadoController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
+     * listado
      *
      * @return \Illuminate\View\View
      */
@@ -88,7 +77,7 @@ class EmpleadoController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * crear empleado
      *
      * @return \Illuminate\View\View
      */
@@ -98,7 +87,7 @@ class EmpleadoController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * alta empleado
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
@@ -125,7 +114,7 @@ class EmpleadoController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * info empleado
      *
      * @param  int  $id
      * @return \Illuminate\View\View
@@ -137,7 +126,7 @@ class EmpleadoController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * editar empleado
      *
      * @param  int  $id
      * @return \Illuminate\View\View
@@ -149,7 +138,7 @@ class EmpleadoController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * actualizar
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -184,7 +173,7 @@ class EmpleadoController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     *eliminar empleado
      *
      * @param  int  $id
      * @return \Illuminate\Http\RedirectResponse
